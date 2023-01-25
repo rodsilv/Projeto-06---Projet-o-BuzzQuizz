@@ -322,6 +322,12 @@ h1 {
   margin-bottom: 16px;
 }
 
+.container-criandoquizz{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 .ComecePelo{
     margin-top: 140px;
     height: 27px;
@@ -333,6 +339,62 @@ line-height: 27px;
 letter-spacing: 0em;
 text-align: left;
 color: #000000;
+}
+
+.caixa-dados-quizz{
+    padding-top: 12px;
+    height: 256px;
+width: 600px;
+left: 420px;
+top: 194px;
+border-radius: 0px;
+margin-top: 27px;
+background: #FFFFFF;
+display: flex;
+flex-direction: column;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+.criar-dados-quizz{
+    box-sizing: border-box;
+    margin-left: 16px;
+    margin-top: 9px;
+    height: 46px;
+width: 564px;
+border: 1px solid #D1D1D1;
+border-radius: 5px;
+display: flex;
+align-items: center;
+padding-left: 23px;
+
+
+font-family: Roboto;
+font-size: 19px;
+font-style: italic;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: #BABABA;
+
+}
+
+.proseguir-para-perguntas{
+    margin-top: 85px;
+    height: 54px;
+    width: 368.8px;
+    border-radius: 15px;
+    background: #EC362D;
+
+    font-family: Roboto;
+font-size: 21px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFF5F4;
+
+    
 
 }
 
