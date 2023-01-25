@@ -212,10 +212,10 @@ h1 {
 }
 
 .container-conteudos2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-pergunta {
@@ -322,18 +322,56 @@ h1 {
   margin-bottom: 16px;
 }
 
-.ComecePelo{
-    margin-top: 140px;
-    height: 27px;
-width: 224px;
-font-family: Roboto;
-font-size: 23px;
-font-weight: 700;
-line-height: 27px;
-letter-spacing: 0em;
-text-align: left;
-color: #000000;
+.ComecePelo {
+  margin-top: 140px;
+  height: 27px;
+  width: 224px;
+  font-family: Roboto;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+.fim-do-criar-quizz {
+  margin-top: 146px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fim-do-criar-quizz > p {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 45px;
+}
+.acessar-quizz {
+  width: 219px;
+  height: 44px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  margin: 0 auto;
+  color: #fff5f4;
+  background-color: #ec362d;
+  border-radius: 15px;
+  margin-bottom: 9px;
+  margin-top: 45px;
+}
 
+.texto-dentro-da-imagem-fim-do-quizz {
+  position: relative;
+}
+.texto-dentro-da-imagem-fim-do-quizz p {
+  position: absolute;
+  top: 217px;
+  left: 24px;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 27px;
+  color: white;
 }
 
 @media (max-width: 1100px) {
