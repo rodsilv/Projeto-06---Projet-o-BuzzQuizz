@@ -403,32 +403,23 @@ h1 {
   color: #bababa;
 }
 
-.proseguir-para-perguntas {
-  margin-top: 85px;
-  height: 54px;
-  width: 368.8px;
-  border-radius: 15px;
-  background: #ec362d;
-  font-family: Roboto;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #fff5f4;
-}
+.proseguir-para-perguntas{
+    margin-top: 85px;
+    height: 54px;
+    width: 368.8px;
+    border-radius: 15px;
+    background: #EC362D;
 
-.texto-dentro-da-imagem-fim-do-quizz {
-  position: relative;
-}
-.texto-dentro-da-imagem-fim-do-quizz p {
-  position: absolute;
-  top: 217px;
-  left: 24px;
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 27px;
-  color: white;
+    font-family: Roboto;
+font-size: 21px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFF5F4;
+
+    
+
 }
 
 @media (max-width: 1100px) {
