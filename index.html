@@ -69,7 +69,7 @@
             </div>
         </div>
 
-        <div class="modal-resultado-quizz "><!-- INICIO DO RESULTADO DO QUIZZ (TELA 2)-->
+        <div class="modal-resultado-quizz esconder"><!-- INICIO DO RESULTADO DO QUIZZ (TELA 2)-->
         <div class="container-caixa-de-resultado">
             <div class="header-caixa-de-resultado">
                 <h2>88% de acerto: Você é praticamente um aluno de Hogwarts!</h2>
@@ -81,9 +81,11 @@
 </div> 
     <button class="reiniciar-quizz">Reiniciar Quizz</button>
     <button class="voltar-para-home">Voltar pra home</button><!-- FIM DO RESULTADO DO QUIZZ (TELA 2)-->
-    
-    </div>
+   
 </div>
+</div><!-- FIM DO CONTAINER-CONTEÚDOS(TELA 2)-->
+
+
     <div class="container-conteudos esconder"><!--INÍCIO TELA 1-->
         <div class="titulo-adicionar-quizz esconder">
             <p>Seus Quizzes</p>
@@ -123,9 +125,33 @@
             </div>
         </div>
     </div><!--FIM DO CONTAINER-CONTEÚDOS(TELA 1)-->
-    <div class="ComecePelo esconder"><!--ADICIONAR QUIZZ (TELA 1)-->
+    
+    <div class="esconder"><!--ADICIONAR QUIZZ (TELA 1)-->
+    <div class="container-criandoquizz">
+    <div class="ComecePelo">
         Comece pelo começo
     </div>
+    <div class="caixa-dados-quizz">
+        <div class="criar-dados-quizz">
+            Título do seu quizz
+        </div>
+        <div class="criar-dados-quizz">
+            URL da imagem do seu quizz
+        </div>
+        <div class="criar-dados-quizz">
+            Quantidade de perguntas do quizz
+        </div>
+        <div class="criar-dados-quizz">
+            Quantidade de níveis do quizz
+        </div>
+    </div>
+    <button class="proseguir-para-perguntas">
+        Prosseguir pra criar perguntas
+    </button>
+    </div>
+</div>
+
+    <div class="esconder"><!--SEU QUIZZ ESTÁ PRONTO INICIO-->
     <div class="fim-do-criar-quizz">
         <p>Seu quizz está pronto!</p>
         <div class="texto-dentro-da-imagem-fim-do-quizz">
@@ -134,7 +160,8 @@
         </div>
         <button class="acessar-quizz">Acessar Quizz</button>
         <button class="voltar-para-home">Voltar pra home</button>
-    </div>
+    </div><!--SEU QUIZZ ESTÁ PRONTO FIM-->
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src=" script.js"></script>
