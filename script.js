@@ -51,19 +51,38 @@ function voltarPaginaInicial() {
 
 function alternativaSelecionada(escolhida) {
 
-    const alternativaErrada = document.querySelector('.correta');
-    const alternativaCerta = document.querySelector('.errada')
-
-    if (alternativaErrada !== null) {
-
-        alternativaErrada.classList.remove('correta');
-
+    const altern1 = document.querySelector('.alternativa1');
+    const altern2 = document.querySelector('.alternativa2');
+    const altern3 = document.querySelector('.alternativa3');
+    const altern4 = document.querySelector('.alternativa4');
+    if(altern1.classList.contains("correta")){
+        altern1.classList.remove("correta");
+    }
+    if(altern2.classList.contains("correta")){
+        altern2.classList.remove("correta");
+    }
+    if(altern3.classList.contains("correta")){
+        altern3.classList.remove("correta");
+    }
+    if(altern4.classList.contains("correta")){
+        altern4.classList.remove("correta");
+    }
+    if(altern1.classList.contains("errada")){
+        altern1.classList.remove("errada");
+    }
+    if(altern2.classList.contains("errada")){
+        altern2.classList.remove("errada");
+    }
+    if(altern3.classList.contains("errada")){
+        altern3.classList.remove("errada");
+    }
+    if(altern4.classList.contains("errada")){
+        altern4.classList.remove("errada");
     }
 
-    const selecionada = document.querySelector(escolhida);
-
-    selecionada.classList.add('correta');
-
-    if (!selecionada.classList.contains('.errada'))
-        selecionada.classList.add('errada');
+    altern1.classList.add("errada");
+    altern2.classList.add("errada");
+    altern3.classList.add("errada");
+    altern4.classList.add("errada");
+escolhida.classList.add("correta");
 }
