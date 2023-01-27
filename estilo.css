@@ -627,6 +627,10 @@ h1 {
   color: #009C22;
 }
 
+.block {
+  pointer-events: none;
+}
+
 @media (max-width: 1100px) {
 
   .titulo-opcoes-quizz,
