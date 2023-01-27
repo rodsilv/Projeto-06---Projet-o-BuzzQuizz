@@ -47,3 +47,23 @@ function voltarPaginaInicial() {
     remove.classList.remove('esconder');
 
 }
+
+
+function alternativaSelecionada(escolhida) {
+
+    const alternativaErrada = document.querySelector('.correta');
+    const alternativaCerta = document.querySelector('.errada')
+
+    if (alternativaErrada !== null) {
+
+        alternativaErrada.classList.remove('correta');
+
+    }
+
+    const selecionada = document.querySelector(escolhida);
+
+    selecionada.classList.add('correta');
+
+    if (!selecionada.classList.contains('.errada'))
+        selecionada.classList.add('errada');
+}

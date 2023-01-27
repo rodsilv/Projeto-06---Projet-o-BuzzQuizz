@@ -513,7 +513,7 @@ h1 {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: flex-start;
   color: #BABABA;
 }
 
@@ -615,6 +615,15 @@ h1 {
   display: flex;
   justify-content: center;
 
+}
+
+.errada {
+  opacity: 0.3;
+  color: #FF4B4B;
+}
+
+.correta {
+  color: #009C22;
 }
 
 @media (max-width: 1100px) {

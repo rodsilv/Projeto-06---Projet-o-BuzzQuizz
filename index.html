@@ -17,7 +17,7 @@
     <header>
         <h1>BuzzQuizz</h1>
     </header>
-    <div class="container-conteudos "><!--INÍCIO TELA 1-->
+    <div class="container-conteudos esconder"><!--INÍCIO TELA 1-->
         <div class="titulo-adicionar-quizz esconder">
             <p>Seus Quizzes</p>
             <ion-icon name="add-outline">
@@ -57,7 +57,7 @@
         </div>
     </div><!--FIM DO CONTAINER-CONTEÚDOS(TELA 1)-->
 
-    <div class="container-conteudos2 esconder"><!--INÍCIO TELA 2-->
+    <div class="container-conteudos2 "><!--INÍCIO TELA 2-->
         <div class="titulo-perguntas">
             <p>O quão potterhead você é?</p>
         </div>
@@ -66,19 +66,19 @@
                 <p>Em qual animal Olho-Tonto Moody transfigurou Malfoy?</p>
             </div>
             <div class="alternativas">
-                <div class="alternativa">
+                <div onclick="alternativaSelecionada('.alternativa1')" class="alternativa1">
                     <img src="./Imagens/gatineo.jpg" alt="">
                     <p>Gatíneo</p>
                 </div>
-                <div class="alternativa">
+                <div onclick="alternativaSelecionada('.alternativa2')" class="alternativa2">
                     <img src="./Imagens/ratata.jpg" alt="">
                     <p>Ratata</p>
                 </div>
-                <div class="alternativa">
+                <div onclick="alternativaSelecionada('.alternativa3')" class="alternativa3">
                     <img src="./Imagens/sapo-gordo.jpg" alt="">
                     <p>Sapo gordo</p>
                 </div>
-                <div class="alternativa">
+                <div onclick="alternativaSelecionada('.alternativa4')" class="alternativa4">
                     <img src="./Imagens/mustela-putorius.jpg" alt="">
                     <p>Mustela putorius (O Furão)</p>
                 </div>
@@ -130,9 +130,9 @@
         </div>
         <div class="caixa-dados-quizz ">
             <input class="criar-dados-quizz" type="text" placeholder="Título do seu quizz" />
-            <input class="criar-dados-quizz" type="text" placeholder="URL da imagem do seu quizz" />
-            <input class="criar-dados-quizz" type="text" placeholder="Quantidade de perguntas do quizz" />
-            <input class="criar-dados-quizz" type="text" placeholder="Quantidade de níveis do quizz " />
+            <input class="criar-dados-quizz" type="url" placeholder="URL da imagem do seu quizz" />
+            <input class="criar-dados-quizz" type="number" placeholder="Quantidade de perguntas do quizz" />
+            <input class="criar-dados-quizz" type="number" placeholder="Quantidade de níveis do quizz " />
         </div>
         <button onclick="continuarCriacao()" class="proseguir-para-perguntas">
             Prosseguir pra criar perguntas
@@ -149,16 +149,16 @@
             <input class="criar-dados-quizz2" type="text" placeholder="Cor de fundo da pergunta" />
             <div class="respostacorreta">Resposta correta</div>
             <input class="criar-dados-quizz2" type="text" placeholder="Resposta correta" />
-            <input class="criar-dados-quizz2" type="text" placeholder="URL da imagem" />
+            <input class="criar-dados-quizz2" type="url" placeholder="URL da imagem" />
             <div class="respostaincorreta">Respostas incorretas</div>
             <input class="criar-dados-quizz2" type="text" placeholder="Resposta incorreta 1" />
-            <input class="criar-dados-quizz2" type="text" placeholder="URL da imagem 1" />
+            <input class="criar-dados-quizz2" type="url" placeholder="URL da imagem 1" />
             <div class="espaco"></div>
             <input class="criar-dados-quizz2" type="text" placeholder="Resposta incorreta 2" />
-            <input class="criar-dados-quizz2" type="text" placeholder="URL da imagem 2" />
+            <input class="criar-dados-quizz2" type="url" placeholder="URL da imagem 2" />
             <div class="espaco"></div>
             <input class="criar-dados-quizz2" type="text" placeholder="Resposta incorreta 3" />
-            <input class="criar-dados-quizz2" type="text" placeholder="URL da imagem 3" />
+            <input class="criar-dados-quizz2" type="url" placeholder="URL da imagem 3" />
         </div>
         <div class="caixa-dados-pergunta2">
             <p class="perg2"> Pergunta 2</p>
@@ -179,8 +179,8 @@
         <div class="caixa-nivel-quizz">
             <div class="pergunta1">Nível 1</div>
             <input class="criar-dados-quizz2" type="text" placeholder="Título do nível" />
-            <input class="criar-dados-quizz2" type="text" placeholder="% de acerto mínima" />
-            <input class="criar-dados-quizz2" type="text" placeholder="URL da imagem do nível" />
+            <input class="criar-dados-quizz2" type="number" placeholder="% de acerto mínima" />
+            <input class="criar-dados-quizz2" type="url" placeholder="URL da imagem do nível" />
             <input class="criar-dados-quizz2" type="text" placeholder="Descrição do nível" />
         </div>
         <div class="caixa-nivel-quizz2">
