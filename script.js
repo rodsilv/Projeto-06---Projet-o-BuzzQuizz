@@ -33,8 +33,7 @@ function continuarCriacao() {
     const remove = document.querySelector('.desk9');
     remove.classList.remove('esconder');
 
-    //createNewQuizz()
-
+    criarQuizz()
 }
 
 function criarNiveis() {
@@ -45,8 +44,7 @@ function criarNiveis() {
     const remove = document.querySelector('.desk10');
     remove.classList.remove('esconder');
 
-    //createNewQuestions()
-
+    criarQuizz()
 }
 
 function finalizarCriacao() {
@@ -57,8 +55,8 @@ function finalizarCriacao() {
     const remove = document.querySelector('.container-fim-do-quizz')
     remove.classList.remove('esconder');
 
-    createLevels()
 
+    criarQuizz()
 }
 
 function voltarPaginaInicial() {
@@ -181,6 +179,103 @@ function createLevels() {
     tituloNivel.value = "";
     imagemNivel.value = "";
     descricaoNivel.value = "";
+
+    promise.then(console.log('dados salvos'));
+    promise.catch(reload);
+
+}
+
+
+function criarQuizz() {
+
+    const objetoQuizz = {
+        title: tituloQuizz.value,
+        image: imagemQuizz.value,
+        questions: [
+            {
+                title: "Título da pergunta 1",
+                color: "#123456",
+                answers: [
+                    {
+                        text: respostaCerta.value,
+                        image: imagemCerta.value,
+                        isCorrectAnswer: true
+                    },
+                    {
+                        text: respostaErrada1.value,
+                        image: imagemErrada1.value,
+                        isCorrectAnswer: false
+                    }
+                ]
+            },
+            {
+                title: "Título da pergunta 2",
+                color: "#123456",
+                answers: [
+                    {
+                        text: "Texto da resposta 1",
+                        image: "https://http.cat/411.jpg",
+                        isCorrectAnswer: true
+                    },
+                    {
+                        text: respostaErrada2.value,
+                        image: imagemErrada2.value,
+                        isCorrectAnswer: false
+                    }
+                ]
+            },
+            {
+                title: "Título da pergunta 3",
+                color: "#123456",
+                answers: [
+                    {
+                        text: "Texto da resposta 1",
+                        image: "https://http.cat/411.jpg",
+                        isCorrectAnswer: true
+                    },
+                    {
+                        text: respostaErrada3.value,
+                        image: imagemErrada3.value,
+                        isCorrectAnswer: false
+                    }
+                ]
+            }
+        ],
+        levels: [
+            {
+                title: tituloNivel.value,
+                image: imagemNivel.value,
+                text: descricaoNivel.value,
+                minValue: 0
+            },
+            {
+                title: "Título do nível 2",
+                image: "https://http.cat/412.jpg",
+                text: "Descrição do nível 2",
+                minValue: 50
+            }
+        ]
+    }
+
+    tituloQuizz.value = "";
+    imagemQuizz.value = "";
+    respostaCerta.value = "";
+    imagemCerta.value = "";
+    respostaErrada1.value = "";
+    imagemErrada1.value = "";
+    respostaErrada2.value = "";
+    imagemErrada2.value = "";
+    respostaErrada3.value = "";
+    imagemErrada3.value = "";
+    tituloNivel.value = "";
+    imagemNivel.value = "";
+    descricaoNivel.value = "";
+
+}
+
+function salvarNoServer() {
+
+    const promise = axios.post('https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes');
 
     promise.then(console.log('dados salvos'));
     promise.catch(reload);
