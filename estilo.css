@@ -377,7 +377,9 @@ h1 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
 
-.criar-dados-quizz {
+.criar-dados-quizz,
+.criar-dados-quizz-titulo,
+.criar-dados-quizz-imagem {
   box-sizing: border-box;
   margin-left: 16px;
   margin-top: 9px;
@@ -385,8 +387,6 @@ h1 {
   width: 564px;
   border: 1px solid #d1d1d1;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
   padding-left: 23px;
   font-size: 19px;
   font-style: italic;
@@ -497,7 +497,21 @@ h1 {
   text-align: left;
 }
 
-.criar-dados-quizz2 {
+.criar-dados-quizz2,
+.criar-dados-quizz2-titulo,
+.criar-dados-quizz2-cor,
+.criar-dados-quizz2-correta,
+.criar-dados-quizz2-url1,
+.criar-dados-quizz2-url2,
+.criar-dados-quizz2-url3,
+.criar-dados-quizz2-url4,
+.criar-dados-quizz2-incorreta1,
+.criar-dados-quizz2-incorreta2,
+.criar-dados-quizz2-incorreta3,
+.criar-dados-quizz2-nivel,
+.criar-dados-quizz2-acertos,
+.criar-dados-quizz2-imagem,
+.criar-dados-quizz2-descricao {
   box-sizing: border-box;
   margin-left: 16px;
   margin-bottom: 14px;

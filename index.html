@@ -17,7 +17,7 @@
     <header>
         <h1>BuzzQuizz</h1>
     </header>
-    <div class="container-conteudos esconder"><!--INÍCIO TELA 1-->
+    <div class="container-conteudos esconder "><!--INÍCIO TELA 1-->
         <div class="titulo-adicionar-quizz esconder">
             <p>Seus Quizzes</p>
             <ion-icon name="add-outline">
@@ -57,7 +57,7 @@
         </div>
     </div><!--FIM DO CONTAINER-CONTEÚDOS(TELA 1)-->
 
-    <div class="container-conteudos2 "><!--INÍCIO TELA 2-->
+    <div class="container-conteudos2 esconder "><!--INÍCIO TELA 2-->
         <div class="titulo-perguntas">
             <p>O quão potterhead você é?</p>
         </div>
@@ -129,8 +129,10 @@
             <p>Comece pelo começo</p>
         </div>
         <div class="caixa-dados-quizz ">
-            <input class="criar-dados-quizz" type="text" placeholder="Título do seu quizz" />
-            <input class="criar-dados-quizz" type="url" placeholder="URL da imagem do seu quizz" />
+            <input class="criar-dados-quizz-titulo" type="text" placeholder="Título do seu quizz" minlength="20"
+                maxlength="65" />
+            <input class="criar-dados-quizz-imagem" type="url" name="url" id="url"
+                placeholder="URL da imagem do seu quizz" pattern="https://.*" />
             <input class="criar-dados-quizz" type="number" placeholder="Quantidade de perguntas do quizz" />
             <input class="criar-dados-quizz" type="number" placeholder="Quantidade de níveis do quizz " />
         </div>
@@ -145,20 +147,24 @@
         </div>
         <div class="caixa-dados-pergunta1">
             <div class="pergunta1">Pergunta 1</div>
-            <input class="criar-dados-quizz2" type="text" placeholder="Texto da Pergunta" />
-            <input class="criar-dados-quizz2" type="text" placeholder="Cor de fundo da pergunta" />
+            <input class="criar-dados-quizz2-titulo" type="text" placeholder="Texto da Pergunta" minlength="20" />
+            <input class="criar-dados-quizz2-cor" type="text" placeholder="Cor de fundo da pergunta" />
             <div class="respostacorreta">Resposta correta</div>
-            <input class="criar-dados-quizz2" type="text" placeholder="Resposta correta" />
-            <input class="criar-dados-quizz2" type="url" placeholder="URL da imagem" />
+            <input class="criar-dados-quizz2-correta" type="text" name="url" id="url" placeholder="Resposta correta"
+                pattern="https://.*" />
+            <input class="criar-dados-quizz2-url1" type="url" placeholder="URL da imagem" />
             <div class="respostaincorreta">Respostas incorretas</div>
-            <input class="criar-dados-quizz2" type="text" placeholder="Resposta incorreta 1" />
-            <input class="criar-dados-quizz2" type="url" placeholder="URL da imagem 1" />
+            <input class="criar-dados-quizz2-incorreta1" type="text" placeholder="Resposta incorreta 1" />
+            <input class="criar-dados-quizz2-url2" type="url" name="url" id="url" placeholder="URL da imagem 1"
+                pattern="https://.*" />
             <div class="espaco"></div>
-            <input class="criar-dados-quizz2" type="text" placeholder="Resposta incorreta 2" />
-            <input class="criar-dados-quizz2" type="url" placeholder="URL da imagem 2" />
+            <input class="criar-dados-quizz2-incorreta2" type="text" placeholder="Resposta incorreta 2" />
+            <input class="criar-dados-quizz2-url3" type="url" name="url" id="url" placeholder="URL da imagem 2"
+                pattern="https://.*" />
             <div class="espaco"></div>
-            <input class="criar-dados-quizz2" type="text" placeholder="Resposta incorreta 3" />
-            <input class="criar-dados-quizz2" type="url" placeholder="URL da imagem 3" />
+            <input class="criar-dados-quizz2-incorreta3" type="text" placeholder="Resposta incorreta 3" />
+            <input class="criar-dados-quizz2-url4" type="url" name="url" id="url" placeholder="URL da imagem 3"
+                pattern="https://.*" />
         </div>
         <div class="caixa-dados-pergunta2">
             <p class="perg2"> Pergunta 2</p>
@@ -172,16 +178,17 @@
         <div class="espacoextra"></div>
     </div>
 
-    <div class="desk10 esconder">
+    <div class="desk10 ">
         <div class="titulo-decidir-niveis"><!--ESCOLHER NIVEL DO QUIZZ-->
             <p>Agora, decida os níveis </p>
         </div>
         <div class="caixa-nivel-quizz">
             <div class="pergunta1">Nível 1</div>
-            <input class="criar-dados-quizz2" type="text" placeholder="Título do nível" />
-            <input class="criar-dados-quizz2" type="number" placeholder="% de acerto mínima" />
-            <input class="criar-dados-quizz2" type="url" placeholder="URL da imagem do nível" />
-            <input class="criar-dados-quizz2" type="text" placeholder="Descrição do nível" />
+            <input class="criar-dados-quizz2-nivel" type="text" placeholder="Título do nível" minlength="10" />
+            <input class="criar-dados-quizz2-acertos" type="number" placeholder="% de acerto mínima" />
+            <input class="criar-dados-quizz2-imagem" type="url" name="url" id="url" placeholder="URL da imagem do nível"
+                pattern="https://.*" />
+            <input class="criar-dados-quizz2-descricao" type="text" placeholder="Descrição do nível" minlength="30" />
         </div>
         <div class="caixa-nivel-quizz2">
             <p class="perg2"> Nível 2</p>
@@ -207,6 +214,7 @@
     </div><!--SEU QUIZZ ESTÁ PRONTO FIM-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src=" script.js"></script>
 </body>
 
