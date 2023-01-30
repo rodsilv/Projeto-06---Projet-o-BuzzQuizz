@@ -1,20 +1,20 @@
 
-const tituloQuizz = document.querySelector('.criar-dados-quizz-titulo');
-const imagemQuizz = document.querySelector('.criar-dados-quizz-imagem');
-const tituloPergunta1 = document.querySelector('.criar-dados-quizz2-titulo');
-const corPergunta = document.querySelector('.criar-dados-quizz2-cor');
-const respostaCerta = document.querySelector('.criar-dados-quizz2-correta');
-const imagemCerta = document.querySelector('.criar-dados-quizz2-url1');
-const respostaErrada1 = document.querySelector('.criar-dados-quizz2-incorreta1');
-const respostaErrada2 = document.querySelector('.criar-dados-quizz2-incorreta2');
-const respostaErrada3 = document.querySelector('.criar-dados-quizz2-incorreta3');
-const imagemErrada1 = document.querySelector('.criar-dados-quizz2-url2');
-const imagemErrada2 = document.querySelector('.criar-dados-quizz2-url3');
-const imagemErrada3 = document.querySelector('.criar-dados-quizz2-url4');
-const tituloNivel = document.querySelector('.criar-dados-quizz2-nivel');
-const acertosNivel = document.querySelector('.criar-dados-quizz2-acertos');
-const imagemNivel = document.querySelector('.criar-dados-quizz2-imagem');
-const descricaoNivel = document.querySelector('.criar-dados-quizz2-descricao');
+let tituloQuizz = document.querySelector('.criar-dados-quizz-titulo');
+let imagemQuizz = document.querySelector('.criar-dados-quizz-imagem');
+let tituloPergunta1 = document.querySelector('.criar-dados-quizz2-titulo');
+let corPergunta = document.querySelector('.criar-dados-quizz2-cor');
+let respostaCerta = document.querySelector('.criar-dados-quizz2-correta');
+let imagemCerta = document.querySelector('.criar-dados-quizz2-url1');
+let respostaErrada1 = document.querySelector('.criar-dados-quizz2-incorreta1');
+let respostaErrada2 = document.querySelector('.criar-dados-quizz2-incorreta2');
+let respostaErrada3 = document.querySelector('.criar-dados-quizz2-incorreta3');
+let imagemErrada1 = document.querySelector('.criar-dados-quizz2-url2');
+let imagemErrada2 = document.querySelector('.criar-dados-quizz2-url3');
+let imagemErrada3 = document.querySelector('.criar-dados-quizz2-url4');
+let tituloNivel = document.querySelector('.criar-dados-quizz2-nivel');
+let acertosNivel = document.querySelector('.criar-dados-quizz2-acertos');
+let imagemNivel = document.querySelector('.criar-dados-quizz2-imagem');
+let descricaoNivel = document.querySelector('.criar-dados-quizz2-descricao');
 
 
 let quizzes = [];
@@ -38,7 +38,7 @@ function continuarCriacao() {
     const remove = document.querySelector('.desk9');
     remove.classList.remove('esconder');
 
-    criarQuizzNovo()
+    
 }
 
 function criarNiveis() {
@@ -49,7 +49,7 @@ function criarNiveis() {
     const remove = document.querySelector('.desk10');
     remove.classList.remove('esconder');
 
-    criarQuizzNovo()
+    
 }
 
 function finalizarCriacao() {
@@ -61,7 +61,7 @@ function finalizarCriacao() {
     remove.classList.remove('esconder');
 
 
-    criarQuizzNovo()
+    criarQuizzNovo();
 }
 
 function voltarPaginaInicial() {
@@ -311,7 +311,7 @@ function criarQuizzNovo() {
 
 }
 
-function enviarObjetodoquizz(){
+function enviarObjetodoquizz(objetoQuizz){
     const promise = axios.post('https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes', objetoQuizz);
 
     promise.then(console.log('dados salvos'));
