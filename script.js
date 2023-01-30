@@ -99,7 +99,7 @@ function alternativaSelecionada(escolhida) {
     altern4.classList.remove("lk4");
     escolhida.classList.add("correta");
 
-
+    
     clicks = clicks + 1;
 
     clicktela2(clicks);
@@ -149,7 +149,7 @@ function selecionarquiz(ou) {
         <p>${ou.data.title}</p>
     </div>`;
 
-    for (let i = 0; i <= ou.data.questions.length; i++) {
+    for (let i = 0; i < ou.data.questions.length; i++) {
 
 
         document.querySelector(".tudo").innerHTML += `
@@ -178,9 +178,56 @@ function selecionarquiz(ou) {
         </div>
     </div>
     `;
-
     }
 
+    document.querySelector(".tudo").innerHTML += `
+    <button onclick="tela2quizzPP()" class="resultado-quizz">Ver Resultado</button>`;
+
+    document.querySelector(".tudo").innerHTML += `
+<div class="modal-resultado-quizz esconder"><!-- INICIO DO RESULTADO DO QUIZZ (TELA 2)-->
+<div>
+        <div class="container-caixa-de-resultado">
+            <div class="header-caixa-de-resultado">
+                <h2>88% de acerto: ${ou.data.levels[0].title}</h2>
+            </div>
+            <img src="${ou.data.levels[0].image}" alt="Dumbledore-resultado">
+            <div class="texto-resultado">${ou.data.levels[0].text}
+            </div>
+        </div>
+    </div>
+    <button class="reiniciar-quizz">Reiniciar Quizz</button>
+    <button class="voltar-para-home">Voltar pra home</button><!-- FIM DO RESULTADO DO QUIZZ (TELA 2)-->
+
+</div>
+<!-- FIM DO CONTAINER-CONTEÚDOS(TELA 2)-->`
+
+}
+function tela2quizzPP(){
+    document.querySelector(".modal-resultado-quizz").classList.remove("esconder");
+
+}
+
+function tela2quizzP(){
+    const telafim = document.querySelector(".alternativa4");
+    if (telafim.classList.contains("lk4")){
+        document.querySelector(".tudo").innerHTML += `
+<div class="modal-resultado-quizz "><!-- INICIO DO RESULTADO DO QUIZZ (TELA 2)-->
+        <div class="container-caixa-de-resultado">
+            <div class="header-caixa-de-resultado">
+                <h2>88% de acerto: Você é praticamente um aluno de Hogwarts!</h2>
+            </div>
+            <img src="./Imagens/ResultadoQuizz.png" alt="Dumbledore-resultado">
+            <div class="texto-resultado">Parabéns Potterhead! Bem-vindx a Hogwarts, aproveite o loop infinito de
+                comida e clique no botão abaixo para usar o vira-tempo e reiniciar este teste.
+            </div>
+        </div>
+    </div>
+    <button class="reiniciar-quizz">Reiniciar Quizz</button>
+    <button class="voltar-para-home">Voltar pra home</button><!-- FIM DO RESULTADO DO QUIZZ (TELA 2)-->
+
+</div>
+<!-- FIM DO CONTAINER-CONTEÚDOS(TELA 2)-->`
+    }
 }
 
 function clicktela2() {
