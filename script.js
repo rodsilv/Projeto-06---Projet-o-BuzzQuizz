@@ -228,8 +228,8 @@ function criarQuizzNovo() {
         image: imagemQuizz.value,
         questions: [
             {
-                title: "Título da pergunta 1",
-                color: "#123456",
+                title: tituloPergunta1.value,
+                color: corPergunta.value,
                 answers: [
                     {
                         text: respostaCerta.value,
@@ -292,19 +292,7 @@ function criarQuizzNovo() {
         ]
     }
 
-    tituloQuizz.value = "";
-    imagemQuizz.value = "";
-    respostaCerta.value = "";
-    imagemCerta.value = "";
-    respostaErrada1.value = "";
-    imagemErrada1.value = "";
-    respostaErrada2.value = "";
-    imagemErrada2.value = "";
-    respostaErrada3.value = "";
-    imagemErrada3.value = "";
-    tituloNivel.value = "";
-    imagemNivel.value = "";
-    descricaoNivel.value = "";
+    
 
     enviarObjetodoquizz(objetoQuizz);
     
