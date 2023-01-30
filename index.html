@@ -17,7 +17,8 @@
     <header>
         <h1>BuzzQuizz</h1>
     </header>
-    <div class="container-conteudos esconder "><!--INÍCIO TELA 1-->
+    <div class="tudo">
+    <div class="container-conteudos "><!--INÍCIO TELA 1-->
         <div class="titulo-adicionar-quizz esconder">
             <p>Seus Quizzes</p>
             <ion-icon name="add-outline">
@@ -54,73 +55,15 @@
             <div class="quizz1">
                 <p>Acerte os personagens corretos </br>dos Simpsons e prove seu amor!</p>
             </div>
+            <div class="quizz1">
+                <p>Acerte os personagens corretos </br>dos Simpsons e prove seu amor!</p>
+            </div>
         </div>
     </div><!--FIM DO CONTAINER-CONTEÚDOS(TELA 1)-->
 
-    <div class="container-conteudos2 esconder "><!--INÍCIO TELA 2-->
-        <div class="titulo-perguntas">
-            <p>O quão potterhead você é?</p>
-        </div>
-        <div class="container-pergunta">
-            <div class="pergunta">
-                <p>Em qual animal Olho-Tonto Moody transfigurou Malfoy?</p>
-            </div>
-            <div class="alternativas">
-                <div onclick="alternativaSelecionada(this)" class="alternativa1">
-                    <img src="./Imagens/gatineo.jpg" alt="">
-                    <p>Gatíneo</p>
-                </div>
-                <div onclick="alternativaSelecionada(this)" class="alternativa2">
-                    <img src="./Imagens/ratata.jpg" alt="">
-                    <p>Ratata</p>
-                </div>
-                <div onclick="alternativaSelecionada(this)" class="alternativa3">
-                    <img src="./Imagens/sapo-gordo.jpg" alt="">
-                    <p>Sapo gordo</p>
-                </div>
-                <div onclick="alternativaSelecionada(this)" class="alternativa4">
-                    <img src="./Imagens/mustela-putorius.jpg" alt="">
-                    <p>Mustela putorius (O Furão)</p>
-                </div>
-            </div>
-        </div>
-        <div class="container-pergunta">
-            <div class="pergunta2">
-                <p>Qual dos objetos abaixo NÃO é uma horcrux?</p>
-            </div>
-            <div class="alternativas">
-                <div class="alternativa">
-                    <img src="./Imagens/the-boy.jpg" alt="">
-                    <p>The boy who lived</p>
-                </div>
-                <div class="alternativa">
-                    <img src="./Imagens/o-livro.jpg" alt="">
-                    <p>O livro monstruoso dos monstros</p>
-                </div>
-                <div class="alternativa">
-                    <img src="./Imagens/anel-velho.jpg" alt="">
-                    <p>Anel velho</p>
-                </div>
-                <div class="alternativa">
-                    <img src="./Imagens/diadema.jpg" alt="">
-                    <p>Diadema da Ravenclaw</p>
-                </div>
-            </div>
-        </div>
-        <div class="modal-resultado-quizz "><!-- INICIO DO RESULTADO DO QUIZZ (TELA 2)-->
-            <div class="container-caixa-de-resultado">
-                <div class="header-caixa-de-resultado">
-                    <h2>88% de acerto: Você é praticamente um aluno de Hogwarts!</h2>
-                </div>
-                <img src="./Imagens/ResultadoQuizz.png" alt="Dumbledore-resultado">
-                <div class="texto-resultado">Parabéns Potterhead! Bem-vindx a Hogwarts, aproveite o loop infinito de
-                    comida e clique no botão abaixo para usar o vira-tempo e reiniciar este teste.
-                </div>
-            </div>
-        </div>
-        <button class="reiniciar-quizz">Reiniciar Quizz</button>
-        <button class="voltar-para-home">Voltar pra home</button><!-- FIM DO RESULTADO DO QUIZZ (TELA 2)-->
-
+    <div class="container-conteudos2 esconder"><!--INÍCIO TELA 2-->
+        
+    
     </div>
     <!-- FIM DO CONTAINER-CONTEÚDOS(TELA 2)-->
 
@@ -212,6 +155,8 @@
             <button onclick="voltarPaginaInicial()" class="voltar-para-home">Voltar pra home</button>
         </div>
     </div><!--SEU QUIZZ ESTÁ PRONTO FIM-->
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
