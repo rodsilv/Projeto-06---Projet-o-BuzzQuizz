@@ -211,12 +211,12 @@ pegarquizzdoserve();
 quizzchegou();
 
 function quizzerro(resposta) {
-    alert("erro");
+    alert("erro no quizz");
 }
 
 
 function reload() {
-    alert('erro')
+    alert('erro dar reload')
     window.location.reload()
 }
 
@@ -306,10 +306,15 @@ function criarQuizzNovo() {
     imagemNivel.value = "";
     descricaoNivel.value = "";
 
+    enviarObjetodoquizz(objetoQuizz);
+    
+
+}
+
+function enviarObjetodoquizz(){
     const promise = axios.post('https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes', objetoQuizz);
 
     promise.then(console.log('dados salvos'));
     promise.catch(reload);
 
 }
-
