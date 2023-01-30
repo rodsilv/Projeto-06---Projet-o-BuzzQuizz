@@ -38,7 +38,7 @@ function continuarCriacao() {
     const remove = document.querySelector('.desk9');
     remove.classList.remove('esconder');
 
-    
+
 }
 
 function criarNiveis() {
@@ -49,7 +49,7 @@ function criarNiveis() {
     const remove = document.querySelector('.desk10');
     remove.classList.remove('esconder');
 
-    
+
 }
 
 function finalizarCriacao() {
@@ -216,7 +216,7 @@ function quizzerro(resposta) {
 
 
 function reload() {
-    alert('erro dar reload')
+    alert('Favor preencher os dados corretamente')
     window.location.reload()
 }
 
@@ -240,6 +240,20 @@ function criarQuizzNovo() {
                         text: respostaErrada1.value,
                         image: imagemErrada1.value,
                         isCorrectAnswer: false
+                    }, {
+                        text: respostaErrada2.value,
+                        image: imagemErrada2.value,
+                        isCorrectAnswer: false
+                    },
+                    {
+                        text: respostaErrada3.value,
+                        image: imagemErrada3.value,
+                        isCorrectAnswer: false
+                    },
+                    {
+                        text: respostaErrada1.value,
+                        image: imagemErrada1.value,
+                        isCorrectAnswer: false
                     }
                 ]
             },
@@ -248,8 +262,8 @@ function criarQuizzNovo() {
                 color: "#123456",
                 answers: [
                     {
-                        text: "Texto da resposta 1",
-                        image: "https://http.cat/411.jpg",
+                        text: respostaCerta.value,
+                        image: imagemCerta.value,
                         isCorrectAnswer: true
                     },
                     {
@@ -292,14 +306,14 @@ function criarQuizzNovo() {
         ]
     }
 
-    
+
 
     enviarObjetodoquizz(objetoQuizz);
-    
+
 
 }
 
-function enviarObjetodoquizz(objetoQuizz){
+function enviarObjetodoquizz(objetoQuizz) {
     const promise = axios.post('https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes', objetoQuizz);
 
     promise.then(console.log('dados salvos'));
