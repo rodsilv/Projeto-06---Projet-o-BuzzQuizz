@@ -587,9 +587,17 @@ display: flex;
 .criar-dados-quizz2-incorreta3-dois,
 .criar-dados-quizz2-incorreta3-tres,
 .criar-dados-quizz2-nivel,
+.criar-dados-quizz2-nivel-dois,
+.criar-dados-quizz2-nivel-tres,
 .criar-dados-quizz2-acertos,
+.criar-dados-quizz2-acertos-dois,
+.criar-dados-quizz2-acertos-tres,
 .criar-dados-quizz2-imagem,
-.criar-dados-quizz2-descricao {
+.criar-dados-quizz2-imagem-dois,
+.criar-dados-quizz2-imagem-tres,
+.criar-dados-quizz2-descricao,
+.criar-dados-quizz2-descricao-dois,
+.criar-dados-quizz2-descricao-tres {
   box-sizing: border-box;
   margin-left: 16px;
   margin-bottom: 14px;

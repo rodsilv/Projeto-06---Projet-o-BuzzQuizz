@@ -11,10 +11,13 @@ let respostaErrada3 = document.querySelector('.criar-dados-quizz2-incorreta3');
 let imagemErrada1 = document.querySelector('.criar-dados-quizz2-url2');
 let imagemErrada2 = document.querySelector('.criar-dados-quizz2-url3');
 let imagemErrada3 = document.querySelector('.criar-dados-quizz2-url4');
+
 let tituloNivel = document.querySelector('.criar-dados-quizz2-nivel');
 let acertosNivel = document.querySelector('.criar-dados-quizz2-acertos');
 let imagemNivel = document.querySelector('.criar-dados-quizz2-imagem');
 let descricaoNivel = document.querySelector('.criar-dados-quizz2-descricao');
+
+
 
 let tituloPergunta1dois = document.querySelector('.criar-dados-quizz2-titulo-dois');
 let corPerguntadois = document.querySelector('.criar-dados-quizz2-cor-dois');
@@ -27,6 +30,13 @@ let imagemErrada1dois = document.querySelector('.criar-dados-quizz2-url2-dois');
 let imagemErrada2dois = document.querySelector('.criar-dados-quizz2-url3-dois');
 let imagemErrada3dois = document.querySelector('.criar-dados-quizz2-url4-dois');
 
+let tituloNiveldois = document.querySelector('.criar-dados-quizz2-nivel-dois');
+let acertosNiveldois = document.querySelector('.criar-dados-quizz2-acertos-dois');
+let imagemNiveldois = document.querySelector('.criar-dados-quizz2-imagem-dois');
+let descricaoNiveldois = document.querySelector('.criar-dados-quizz2-descricao-dois');
+
+
+
 let tituloPergunta1tres = document.querySelector('.criar-dados-quizz2-titulo-tres');
 let corPerguntatres = document.querySelector('.criar-dados-quizz2-cor-tres');
 let respostaCertatres = document.querySelector('.criar-dados-quizz2-correta-tres');
@@ -37,6 +47,12 @@ let respostaErrada3tres = document.querySelector('.criar-dados-quizz2-incorreta3
 let imagemErrada1tres = document.querySelector('.criar-dados-quizz2-url2-tres');
 let imagemErrada2tres = document.querySelector('.criar-dados-quizz2-url3-tres');
 let imagemErrada3tres = document.querySelector('.criar-dados-quizz2-url4-tres');
+
+let tituloNiveltres = document.querySelector('.criar-dados-quizz2-nivel-tres');
+let acertosNiveltres = document.querySelector('.criar-dados-quizz2-acertos-tres');
+let imagemNiveltres = document.querySelector('.criar-dados-quizz2-imagem-tres');
+let descricaoNiveltres = document.querySelector('.criar-dados-quizz2-descricao-tres');
+
 
 
 let quizzes = [];
@@ -377,13 +393,19 @@ function criarQuizzNovo() {
                 title: tituloNivel.value,
                 image: imagemNivel.value,
                 text: descricaoNivel.value,
-                minValue: 0
+                minValue: acertosNivel.value
             },
             {
-                title: "Título do nível 2",
-                image: "https://http.cat/412.jpg",
-                text: "Descrição do nível 2",
-                minValue: 50
+                title: tituloNiveldois.value,
+                image: imagemNiveldois.value,
+                text: descricaoNiveldois.value,
+                minValue: acertosNiveldois.value
+            },
+            {
+                title: tituloNiveltres.value,
+                image: imagemNiveltres.value,
+                text: descricaoNiveltres.value,
+                minValue: acertosNiveltres.value
             }
         ]
     }
