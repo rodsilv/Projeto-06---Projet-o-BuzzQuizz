@@ -16,6 +16,28 @@ let acertosNivel = document.querySelector('.criar-dados-quizz2-acertos');
 let imagemNivel = document.querySelector('.criar-dados-quizz2-imagem');
 let descricaoNivel = document.querySelector('.criar-dados-quizz2-descricao');
 
+let tituloPergunta1dois = document.querySelector('.criar-dados-quizz2-titulo-dois');
+let corPerguntadois = document.querySelector('.criar-dados-quizz2-cor-dois');
+let respostaCertadois = document.querySelector('.criar-dados-quizz2-correta-dois');
+let imagemCertadois = document.querySelector('.criar-dados-quizz2-url1-dois');
+let respostaErrada1dois = document.querySelector('.criar-dados-quizz2-incorreta1-dois');
+let respostaErrada2dois = document.querySelector('.criar-dados-quizz2-incorreta2-dois');
+let respostaErrada3dois = document.querySelector('.criar-dados-quizz2-incorreta3-dois');
+let imagemErrada1dois = document.querySelector('.criar-dados-quizz2-url2-dois');
+let imagemErrada2dois = document.querySelector('.criar-dados-quizz2-url3-dois');
+let imagemErrada3dois = document.querySelector('.criar-dados-quizz2-url4-dois');
+
+let tituloPergunta1tres = document.querySelector('.criar-dados-quizz2-titulo-tres');
+let corPerguntatres = document.querySelector('.criar-dados-quizz2-cor-tres');
+let respostaCertatres = document.querySelector('.criar-dados-quizz2-correta-tres');
+let imagemCertatres = document.querySelector('.criar-dados-quizz2-url1-tres');
+let respostaErrada1tres = document.querySelector('.criar-dados-quizz2-incorreta1-tres');
+let respostaErrada2tres = document.querySelector('.criar-dados-quizz2-incorreta2-tres');
+let respostaErrada3tres = document.querySelector('.criar-dados-quizz2-incorreta3-tres');
+let imagemErrada1tres = document.querySelector('.criar-dados-quizz2-url2-tres');
+let imagemErrada2tres = document.querySelector('.criar-dados-quizz2-url3-tres');
+let imagemErrada3tres = document.querySelector('.criar-dados-quizz2-url4-tres');
+
 
 let quizzes = [];
 let clicks = 0;
@@ -296,42 +318,55 @@ function criarQuizzNovo() {
                         text: respostaErrada3.value,
                         image: imagemErrada3.value,
                         isCorrectAnswer: false
+                    }
+                ]
+            },
+            {
+                title: tituloPergunta1dois.value,
+                color: corPerguntadois.value,
+                answers: [
+                    {
+                        text: respostaCertadois.value,
+                        image: imagemCertadois.value,
+                        isCorrectAnswer: true
                     },
                     {
-                        text: respostaErrada1.value,
-                        image: imagemErrada1.value,
+                        text: respostaErrada1dois.value,
+                        image: imagemErrada1dois.value,
+                        isCorrectAnswer: false
+                    }, {
+                        text: respostaErrada2dois.value,
+                        image: imagemErrada2dois.value,
+                        isCorrectAnswer: false
+                    },
+                    {
+                        text: respostaErrada3dois.value,
+                        image: imagemErrada3dois.value,
                         isCorrectAnswer: false
                     }
                 ]
             },
             {
-                title: "Título da pergunta 2",
-                color: "#123456",
+                title: tituloPergunta1tres.value,
+                color: corPerguntatres.value,
                 answers: [
                     {
-                        text: respostaCerta.value,
-                        image: imagemCerta.value,
+                        text: respostaCertatres.value,
+                        image: imagemCertatres.value,
                         isCorrectAnswer: true
                     },
                     {
-                        text: respostaErrada2.value,
-                        image: imagemErrada2.value,
+                        text: respostaErrada1tres.value,
+                        image: imagemErrada1tres.value,
                         isCorrectAnswer: false
-                    }
-                ]
-            },
-            {
-                title: "Título da pergunta 3",
-                color: "#123456",
-                answers: [
-                    {
-                        text: "Texto da resposta 1",
-                        image: "https://http.cat/411.jpg",
-                        isCorrectAnswer: true
+                    }, {
+                        text: respostaErrada2tres.value,
+                        image: imagemErrada2tres.value,
+                        isCorrectAnswer: false
                     },
                     {
-                        text: respostaErrada3.value,
-                        image: imagemErrada3.value,
+                        text: respostaErrada3tres.value,
+                        image: imagemErrada3tres.value,
                         isCorrectAnswer: false
                     }
                 ]
